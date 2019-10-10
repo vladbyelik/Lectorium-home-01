@@ -1,0 +1,36 @@
+let arr = [3,0,-5,1,44,-12,3,0,1,2,-3,-3,2,1,4,-2,-3,-1];
+
+function minSearch (array) {
+    let smallest = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < smallest) {
+            smallest = array[i];
+        }
+    }
+    let result = ['Your array: ' + array, 'Smallest element = ' + smallest];
+    return result;
+}
+
+function maxSearch (array) {
+    let biggest = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > biggest) {
+            biggest = array[i];
+        }
+    }
+    let result = ['Your array: ' + array, 'Biggest element = ' + biggest];
+    return result;
+}
+
+function summOfElements (array) {
+    let summ = 0;
+    for (let i = 0; i<array.length; i++) {
+        summ += array[i];
+    }
+    let result = ['Your array: ' + array, 'Summ of elements = ' + summ];
+    return result;
+}
+
+console.log(minSearch(arr));
+console.log(maxSearch(arr));
+console.log(summOfElements(arr));

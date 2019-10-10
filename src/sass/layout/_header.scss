@@ -1,0 +1,46 @@
+header {
+  height: 1000px;
+  background-color: #e8e9e1;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #393d3c;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.chairs {
+  background-image: url(../../src/img/logo-bgrnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 2242px;
+  width: 100%;
+  max-height: 1000px;
+}
+
+.logo {
+  flex: 2;
+  display: flex;
+  background-image: url(../../src/img/logo-bgrnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.menu {
+  flex: 1;
+  background-color: #7acec3;
+  background-image: linear-gradient(to bottom right, transparent 49.7%, #fff, #fff, transparent 50%);
+  background-repeat: no-repeat;
+}
