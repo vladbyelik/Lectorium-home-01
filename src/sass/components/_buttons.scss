@@ -1,8 +1,8 @@
 .menu-btn {
   display: block;
-  border: 6px solid #fff;
-  width: 250px;
-  height: 250px;
+  border: 0.2rem solid #fff;
+  width: 8rem;
+  height: 8rem;
   position: relative;
 }
 
@@ -11,11 +11,12 @@
   span {
     position: absolute;
     left: 50%;
-    width: 80px;
-    height: 6px;
-    margin-top: -3px;
-    margin-left: -40px;
-    background-color: #ffffff;  display: block;
+    width: 4rem;
+    height: 0.2rem;
+    margin-top: -0.1rem;
+    margin-left: -2rem;
+    background-color: #ffffff;
+    display: block;
     transition: 0.5s;
   }
   span:first-child {
@@ -50,28 +51,30 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 350px;
-  top: 100px;
+  right: 12%;
+  top: 15%;
 }
 
 .menu-nav {
   background-color: #f8c255;
-  height: 250px;
-  line-height: 250px;
-  padding-left: 100px;
+  height: 8rem;
+  line-height: 8rem;
+  padding-left: 2rem;
+  transition: 0.5s;
+  transform-origin: right center;
+  transform: scaleX(0) translateX(0);
+  opacity: 0;
 }
 
 .menu-nav-link {
   display: inline-block;
   color: #ffffff;
-  margin-right: 50px;
-}
-
-.menu-nav {
-  transition: 0.5s;
-  transform-origin: right center;
-  transform: scaleX(0) translateX(0);
-  opacity: 0;
+  margin-right: 2rem;
+  font-size: 1rem;
+  line-height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .menu-nav-active {
