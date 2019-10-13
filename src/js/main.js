@@ -15,12 +15,12 @@ $(function(){
 
 
 let arrow = document.getElementsByClassName('hover-arrow');
-let li = document.getElementsByClassName('list');
+let list = document.getElementsByClassName('list');
 let link = document.getElementsByClassName('link');
 
 $(function () {
     for (let i =0; i<arrow.length; i++) {
-        $(li[i]).on('mouseover mouseout', function(){
+        $(list[i]).on('mouseover mouseout', function(){
             $(arrow[i]).toggleClass('hover');
             $(link[i]).toggleClass('hover-color');
         });
